@@ -17,6 +17,7 @@ describe('Counterstring.vue', () => {
   it('should set msg when get is called', () => {
     const Constructor = Vue.extend(Counterstring)
     const vm = new Constructor().$mount()
+    vm.$copyText = () => { return { catch: () => {} } }
     vm.length = 1
     vm.get()
     expect(vm.msg).to.not.equal('')
