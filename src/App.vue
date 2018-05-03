@@ -1,11 +1,15 @@
 <template>
-  <div id="app">
-    <header>
-      <span>Perlclip PWA</span>
+  <div id="app" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title">Perlclip PWA</span>
+      </div>
     </header>
-    <main>
-      <img src="./assets/logo.png" alt="Perlclip PWA">
+    <main class="mdl-layout__content">
+      <div class="page-content">
+      <img class="mdl-cell mdl-cell--2-col" src="./assets/logo.png" alt="Perlclip PWA">
       <router-view></router-view>
+      </div>
     </main>
   </div>
 </template>
@@ -17,6 +21,9 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://code.getmdl.io/1.2.1/material.blue-red.min.css');
+
 body {
   margin: 0;
 }

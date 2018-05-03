@@ -1,17 +1,18 @@
 <template>
-  <div class="counterstring">
-    <h1>Counterstring</h1>
-    <div>
+  <div class="counterstring mdl-components__page mdl-grid">
+    <div class="mdl-cell mdl-cell--2-col mdl-cell mdl-cell--1-col-tablet mdl-cell--hide-phone"></div>
+    <div class="mdl-cell mdl-cell--8-col">
+      <h2>Counterstring</h2>
       <form>
-        <div>
-          <input id="length" type="number" v-model="length"/>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded is-dirty">
+          <input id="length" type="number" v-model="length" class="mdl-textfield__input"/>
         </div>        
         <div>
-          <a @click.prevent="get">
+          <a @click.prevent="get"  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
             COPY TO CLIPBOARD
           </a>
         </div>
-        <div>{{ msg }}</div>
+        <div class="mdl-card__actions">{{ msg }}</div>
       </form>
     </div>
   </div>
