@@ -48,3 +48,8 @@ npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Credits
+
+- [Test Tools - James Bach - Sastisfice Inc.](http://www.satisfice.com/tools.shtml) for such a great idea of test tools
+- Charles Bochet for teaching me how to make progressive web application in his [A progressive Web application with Vue JS, Webpack & Material Design](https://blog.sicara.com/a-progressive-web-application-with-vue-js-webpack-material-design-part-1-c243e2e6e402)
