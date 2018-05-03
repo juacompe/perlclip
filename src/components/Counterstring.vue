@@ -29,7 +29,15 @@ export default {
   },
   methods: {
     get () {
-      this.msg = `${Counterstring.get(this.length)}`
+      var output = Counterstring.get(this.length)
+      this.msg = `${output}`
+      this.$copyText(output).then(function (e) {
+        alert('Copied')
+        console.log(e)
+      }, function (e) {
+        alert('Can not copy')
+        console.log(e)
+      })
     }
   }
 }
