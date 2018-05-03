@@ -1,5 +1,7 @@
 # Perlclip on mobile
 
+[![Build Status](https://travis-ci.org/juacompe/perlclip.svg?branch=master)](https://travis-ci.org/juacompe/perlclip)
+
 > James Bach's Perlclip on mobile
 
 I came to know [Perlclip](http://www.satisfice.com/tools.shtml) from Rapid Sofware Testing course. I find the tool is very useful especially its `counterstring` feature. Below is a quote from Perlclip help about counterstring:
