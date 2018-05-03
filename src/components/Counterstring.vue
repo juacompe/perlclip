@@ -18,6 +18,8 @@
 </template>
 
 <script>
+import Counterstring from '@/models/Counterstring'
+
 export default {
   data () {
     return {
@@ -27,7 +29,7 @@ export default {
   },
   methods: {
     get () {
-      this.msg = `length = ${this.length}`
+      this.msg = `${Counterstring.get(this.length)}`
     }
   }
 }
