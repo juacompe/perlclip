@@ -6,7 +6,7 @@ addons:
   chrome: stable
 script:
 - npm run unit
-- xvfb-run npm run e2e --verbose
+- xvfb-run npm run e2e
 - npm run build
 deploy:
   skip_cleanup: true
