@@ -3,7 +3,7 @@ node_js:
 - '8'
 script:
 - npm run unit
-- xvfb-run npm run e2e
+- xvfb-run npm run e2e --verbose
 - npm run build
 deploy:
   skip_cleanup: true
