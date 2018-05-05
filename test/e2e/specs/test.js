@@ -12,7 +12,7 @@ module.exports = {
       .url(devServer)
       .waitForElementVisible('#app', 5000)
       .assert.elementPresent('.counterstring')
-      .assert.containsText('h1', 'Counterstring')
+      .assert.containsText('h2', 'Counterstring')
       .assert.elementCount('a', 1)
       .end()
   }
