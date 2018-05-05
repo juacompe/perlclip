@@ -5,7 +5,7 @@
       <h2>Counterstring</h2>
       <form>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label is-upgraded is-dirty">
-          <input id="length" type="number" v-model="length" class="mdl-textfield__input"/>
+          <input id="length" type="number" v-model="length" v-on:click="clearLength()" class="mdl-textfield__input"/>
         </div>        
         <div>
           <a @click.prevent="get"  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
@@ -36,6 +36,9 @@ export default {
         alert('Can not copy')
         console.log(e)
       })
+    },
+    clearLength () {
+      this.length = ''
     }
   }
 }
