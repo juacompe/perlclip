@@ -3,6 +3,7 @@ node_js:
 - '8'
 script:
 - npm run unit
+- npm run build
 deploy:
   provider: firebase
   token:
