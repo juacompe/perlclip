@@ -12,7 +12,7 @@
             COPY TO CLIPBOARD
           </a>
         </div>
-        <div class="mdl-card__actions">{{ msg }}</div>
+        <p class="mdl-card__actions output">{{ msg }}</p>
       </form>
     </div>
   </div>
@@ -45,11 +45,15 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style scoped>
 h1, h2 {
   font-weight: normal;
 }
 a {
   color: #35495E;
+}
+.output {
+  word-break: break-all;
+  text-align: left;
 }
 </style>
