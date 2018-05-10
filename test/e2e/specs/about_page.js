@@ -8,7 +8,7 @@ module.exports = {
       .useCss()
       .click('.mdl-layout__drawer-button i')
       .click('.mdl-layout__drawer a:nth-child(2)')
-      .assert.elementPresent('.about')
+      .waitForElementVisible('.about', 5000)
       .assert.elementCount('img', 1)
       .end()
   }
