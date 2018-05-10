@@ -12,8 +12,8 @@ module.exports = {
       .url(devServer)
       .waitForElementVisible('#app', 5000)
       .assert.elementPresent('.counterstring')
-      .assert.containsText('h2', 'Counterstring')
-      .assert.elementCount('a', 1)
+      .assert.containsText('label', 'Counterstring')
+      .assert.containsText('a.mdl-button--colored', 'COPY TO CLIPBOARD')
       .end()
   }
 }
