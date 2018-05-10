@@ -7,7 +7,6 @@
     </header>
     <main class="mdl-layout__content">
       <div class="page-content">
-      <img class="mdl-cell mdl-cell--2-col" src="./assets/logo.png" alt="Perlclip PWA">
       <router-view></router-view>
       </div>
     </main>
