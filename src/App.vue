@@ -2,14 +2,13 @@
   <div id="app" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Perlclip PWA</span>
+        <span class="mdl-layout-title">{{title}}</span>
       </div>
     </header>
     <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Perlclip PWA</span>
+      <span class="mdl-layout-title">{{title}}</span>
       <nav class="mdl-navigation">
-        <router-link class="mdl-navigation__link" to="/" @click.native="hideMenu">Counterstring</router-link>
-        <router-link class="mdl-navigation__link" to="/about" @click.native="hideMenu">About</router-link>
+        <router-link v-for="link in this.links" v-bind:key="link" v-bind:to="link.to" router-link class="mdl-navigation__link" @click.native="hideMenu">{{link.name}}</router-link>
       </nav>
     </div>
     <main class="mdl-layout__content">
@@ -23,7 +22,16 @@
 <script>
 require('material-design-lite')
 export default {
-  name: 'app'
+  name: 'app',
+  data () {
+    return {
+      title: 'Perlclip PWA',
+      links: [
+        { name: 'Counterstring', to: '/' },
+        { name: 'About', to: '/about' }
+      ]
+    }
+  }
 }
 </script>
 
